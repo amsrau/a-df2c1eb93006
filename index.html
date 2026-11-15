@@ -712,7 +712,7 @@ function viewFilm(arg){
     <p class="fnote">Silent, with everything on screen. It is drawn live from the data in this file, so the numbers and quotes are the current ones. Every quotation shown is his, with its year, venue and page.</p>
   </div>`).replace(/data-(a|b)="([\d.]+)"/g, (m, k, v) => `data-${k}="${fsh(+v)}"`).replace("<!--watch-->", watch);
 }
-const FCH = [[6, 24, "Hear"], [24, 36, "Watch"], [36, 58, "Trace"], [58, 78, "Follow one question"], [78, 86, "Play"], [86, 92, "Use it"]];
+const FCH = [[6, 24, "Listen"], [24, 36, "Watch"], [36, 58, "Trace"], [58, 78, "Follow one question"], [78, 86, "Play"], [86, 92, "Use it"]];
 function filmFrame(t){
   const st = document.getElementById("stage"); if (!st) return;
   FILM.t = t;
